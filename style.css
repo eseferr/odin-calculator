@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.calc-container {
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calc-frame {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  border: solid 1px;
+  justify-content: start;
+}
+.operation-section {
+  background-color: red;
+  width: 500px;
+  height: 100px;
+  border: solid 1px;
+}
+.btns-section {
+  background-color: blue;
+  width: 500px;
+  height: 400px;
+  display: flex;
+}
