@@ -100,8 +100,9 @@ equalBtn.addEventListener("click", () => {
     console.log(num1, num2, operation);
     result = operate(num1, num2, operation);
     screen.textContent = result.toString();
-    //num1 = result;
-    //num2 = null;
+    textContent = 0;
+    num1 = result;
+    num2 = null;
     operation = "";
   }
 });
