@@ -13,8 +13,8 @@
   display: flex;
   flex-direction: column;
   width: 500px;
-  height: 500px;
-  border: 1px solid;
+  height: 600px;
+  border: 2px solid;
   justify-content: space-between;
   background-color: #bbbbbb;
   padding: 10px;
@@ -61,7 +61,9 @@
   margin: 10px;
 }
 .numbers {
-  justify-content: space-between;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
   width: 70%;
   margin: 10px;
 }
@@ -72,7 +74,7 @@
 }
 .btn {
   width: 100px;
-  height: 103px;
+  height: 100px;
   margin: 3px;
   font-size: 1.5rem;
   color: #fff;
@@ -92,4 +94,14 @@
 }
 .equal {
   background-color: #df8220;
+}
+.equal:hover {
+  color: #df8220;
+}
+.clear {
+  height: 35px;
+  background-color: #ff6132;
+}
+.clear:hover {
+  color: #ff6132;
 }
