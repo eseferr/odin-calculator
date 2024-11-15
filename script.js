@@ -45,6 +45,9 @@ numBtn.forEach((btn) => {
   btn.addEventListener("click", () => {
     if (screen.textContent.length < 15 && screen.textContent == 0) {
       screen.textContent = btn.textContent;
+    } else if (screen.textContent.length < 15 && result === "e") {
+      screen.textContent = btn.textContent;
+      result = null;
     } else if (screen.textContent.length < 15) {
       screen.textContent += btn.textContent;
     }
@@ -100,9 +103,9 @@ equalBtn.addEventListener("click", () => {
     console.log(num1, num2, operation);
     result = operate(num1, num2, operation);
     screen.textContent = result.toString();
-    textContent = 0;
     num1 = result;
     num2 = null;
     operation = "";
+    result = "e";
   }
 });
